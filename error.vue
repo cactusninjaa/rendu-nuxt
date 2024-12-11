@@ -19,7 +19,9 @@
         <p>It looks like something broke.</p>
         <p>Sorry about that.</p>
       </template>
-      <NuxtLink to="/">Go back home</NuxtLink>
+      <NuxtLink to="/">
+        <Button>Home</Button>
+      </NuxtLink>
     </div>
   </NuxtLayout>
 </template>

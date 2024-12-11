@@ -5,10 +5,10 @@ export default function (data) {
 
     const next = () => {
         if (currentQuestionIndex.value < data.questions.length ) {
-          currentQuestionIndex.value++
+        currentQuestionIndex.value++
         }
         updateScore()
-      }
+    }
 
     const updateScore = () => {  
         if (selectedAnswer.value === data.questions[currentQuestionIndex.value - 1].correctAnswer) {

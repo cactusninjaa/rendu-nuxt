@@ -3,21 +3,18 @@
 </script>
 
 <template>
-    <div>
-        <p>{{ quizz.data.questions[quizz.currentQuestionIndex.value].title }}</p>
-        <p>Question {{ quizz.currentQuestionIndex.value + 1 }} / {{ quizz.data.questions.length }}</p>
-        
+    <div class="max-w-sm sm:max-w-xl mx-auto flex flex-col gap-6">
+        <div class="flex justify-between">
+            <p>{{ quizz.data.questions[quizz.currentQuestionIndex.value].title }}</p>
+            <p> {{ quizz.currentQuestionIndex.value + 1 }} / {{ quizz.data.questions.length }}</p>
+        </div>
+       
         <form @submit.prevent="quizz.next()">
-            <div v-for="(answer, index) in quizz.data.questions[quizz.currentQuestionIndex.value].answers" :key="index">
-                <input 
-                    type="radio" 
-                    :value="answer" 
-                    v-model="quizz.selectedAnswer.value" 
-                    name="quiz-answer" 
-                />
-                <label>{{ answer }}</label>
+            <div class="flex gap-2 pb-6 flex-col sm:flex-row">
+                <AnswerCards />
             </div>
-            <button type="submit">Next</button>
+           
+            <Button type="submit" class="w-full">Next</Button>
         </form>
     </div>
 </template>
