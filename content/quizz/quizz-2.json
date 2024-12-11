@@ -1,0 +1,36 @@
+{
+    "slug": "quizz-2",
+    "title": "Quizz histoire",
+    "questions" : [
+        {
+            "title": "En quelle année a eu lieu la Révolution française ?",
+            "answers": [
+                "1789",
+                "1799", 
+                "1809",
+                "1819"
+            ],
+            "correctAnswer" : "1789"
+        },
+        {
+            "title": "En quelle année a eu lieu la Première Guerre mondiale ?",
+            "answers": [
+                "1914",
+                "1918", 
+                "1922",
+                "1926"
+            ],
+            "correctAnswer" : "1914"
+        },
+        {
+            "title": "En quelle année a eu lieu la Seconde Guerre mondiale ?",
+            "answers": [
+                "1939",
+                "1945", 
+                "1950", 
+                "1955"
+            ],
+            "correctAnswer" : "1945"
+        }
+    ]
+}

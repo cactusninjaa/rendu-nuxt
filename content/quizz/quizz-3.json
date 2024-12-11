@@ -1,0 +1,37 @@
+{
+    "slug": "quizz-3",
+    "title": "Quizz jeux vidéo",
+    "questions" : [
+        {
+            "title": "Quel est le jeu vidéo le plus vendu de tous les temps ?",
+            "answers": [
+                "Minecraft",
+                "Tetris",
+                "GTA V",
+                "Wii Sports"
+            ],
+            "correctAnswer": "Tetris"
+        },
+        {
+            "title": "Quel est le jeu vidéo le plus vendu de la série des Call of Duty ?",
+            "answers": [
+                "Call of Duty: Modern Warfare 3",
+                "Call of Duty: Black Ops",
+                "Call of Duty: Black Ops II",
+                "Call of Duty: Modern Warfare 2"
+            ],
+            "correctAnswer": "Call of Duty: Modern Warfare 2"
+        },
+        {
+            "title": "Quel est le jeu vidéo le plus vendu de la série des Mario Kart ?",
+            "answers": [
+                "Mario Kart 8",
+                "Mario Kart Wii",
+                "Mario Kart DS",
+                "Mario Kart 8 Deluxe"
+            ],
+            "correctAnswer": "Mario Kart 8 Deluxe"
+
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "slug": "quizz-1",
+    "title": "Quizz capitales",
+    "questions" : [
+        {
+            "title": "Quelle est la capitale de la France ?",
+            "answers": [
+                "Paris",
+                "Londres", 
+                "Madrid",
+                "Berlin"
+            ],
+            "correctAnswer": "Paris"
+        },
+        {
+            "title": "Quelle est la capitale de l'Espagne ?",
+            "answers": [
+                "Paris",
+                "Londres", 
+                "Madrid",
+                "Berlin"
+            ],
+            "correctAnswer": "Madrid"
+        },
+        {
+            "title": "Quelle est la capitale de l'Allemagne ?",
+            "answers": [
+                "Paris",
+                "Londres", 
+                "Madrid",
+                "Berlin"
+            ],
+            "correctAnswer": "Berlin"
+        }
+    ]
+}
