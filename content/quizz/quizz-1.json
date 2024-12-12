@@ -13,6 +13,16 @@
             "correctAnswer": "Paris"
         },
         {
+            "title": "Quelle est la capitale du Royaume-Unis ?",
+            "answers": [
+                "Paris",
+                "Londres", 
+                "Madrid",
+                "Berlin"
+            ],
+            "correctAnswer": "Londres"
+        },
+        {
             "title": "Quelle est la capitale de l'Espagne ?",
             "answers": [
                 "Paris",

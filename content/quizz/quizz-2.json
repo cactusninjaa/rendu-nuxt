@@ -16,7 +16,7 @@
             "title": "En quelle année a eu lieu la Première Guerre mondiale ?",
             "answers": [
                 "1914",
-                "1918", 
+                "1919", 
                 "1922",
                 "1926"
             ],
@@ -26,11 +26,11 @@
             "title": "En quelle année a eu lieu la Seconde Guerre mondiale ?",
             "answers": [
                 "1939",
-                "1945", 
+                "1946", 
                 "1950", 
                 "1955"
             ],
-            "correctAnswer" : "1945"
+            "correctAnswer" : "1939"
         }
     ]
 }

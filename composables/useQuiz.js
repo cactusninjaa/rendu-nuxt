@@ -2,19 +2,34 @@ export default function (data) {
     const score = ref(0)
     const currentQuestionIndex = ref(0)
     const selectedAnswer = ref(null)
+    const startTime = ref(Date.now())
 
     const next = () => {
-        if (currentQuestionIndex.value < data.questions.length ) {
-        currentQuestionIndex.value++
+        if (currentQuestionIndex.value < data.questions.length) {
+            updateScore()
+            currentQuestionIndex.value++
+            startTime.value = Date.now() // Reset start time for the next question
+            selectedAnswer.value = null // Reset selected answer for the next question
         }
-        updateScore()
     }
 
-    const updateScore = () => {  
-        if (selectedAnswer.value === data.questions[currentQuestionIndex.value - 1].correctAnswer) {
-            score.value ++;
-            selectedAnswer.value = null
+    const updateScore = () => {
+        const timeTaken = (Date.now() - startTime.value) / 1000
+        if (selectedAnswer.value === data.questions[currentQuestionIndex.value].correctAnswer) {
+            // Adjust score based on time taken
+
+            if (timeTaken <= 1) {
+                score.value += 5 // Fast response
+            } else if (timeTaken <= 5) {
+                score.value += 5 - timeTaken
+            } else if (timeTaken > 5){
+                score.value += 1 // Slow response
+            }
         }
+    }
+
+    const roundScore = () => {
+        score.value = Math.round(score.value * 1000) / 1000
     }
 
     const reset = () => {
@@ -29,6 +44,7 @@ export default function (data) {
         score,
         currentQuestionIndex,
         selectedAnswer,
-        reset
+        reset, 
+        roundScore
     };
 }
