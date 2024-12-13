@@ -1,6 +1,7 @@
 {
     "slug": "quizz-2",
     "title": "Quizz histoire",
+    "tags" : "histoire-géographie",
     "questions" : [
         {
             "title": "En quelle année a eu lieu la Révolution française ?",

@@ -1,6 +1,7 @@
 {
     "slug": "quizz-1",
     "title": "Quizz capitales",
+    "tags" : "histoire-géographie",
     "questions" : [
         {
             "title": "Quelle est la capitale de la France ?",

@@ -1,6 +1,7 @@
 {
     "slug": "quizz-3",
     "title": "Quizz jeux vidéo",
+    "tags": "Jeux-video",
     "questions" : [
         {
             "title": "Quel est le jeu vidéo le plus vendu de tous les temps ?",
