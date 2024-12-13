@@ -3,6 +3,7 @@
 </script>
 
 <template>
+    <div>
     <div v-for="(answer, index) in quizz.data.questions[quizz.currentQuestionIndex.value].answers" 
     :key="index"
     class="flex gap-2 border p-2 rounded-md w-full"
@@ -19,5 +20,5 @@
             <span>{{ answer }}</span>
         </label>
     </div>
-   
+</div>
 </template>

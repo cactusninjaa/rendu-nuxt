@@ -28,5 +28,7 @@
                 <Button>Autre quizz</Button>
             </NuxtLink>
         </div>
+        <Confetti v-if="showConfetti" />
+
     </div>
 </template>

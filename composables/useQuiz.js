@@ -4,6 +4,11 @@ export default function (data) {
     const selectedAnswer = ref(null)
     const startTime = ref(Date.now())
     const answers = ref([])
+    const showConfetti = ref(false)
+
+    if (score.value >= data.questions.length / 2) {
+        showConfetti.value = true
+    }
 
     const next = () => {
         saveAnswer()
@@ -46,6 +51,7 @@ export default function (data) {
         score.value = 0
         currentQuestionIndex.value = 0
         selectedAnswer.value = null
+        answers.value = []
     }
 
     return {
@@ -56,6 +62,7 @@ export default function (data) {
         selectedAnswer,
         reset, 
         roundScore,
-        answers
+        answers,
+        showConfetti
     };
 }
