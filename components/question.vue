@@ -10,7 +10,7 @@
         </div>
        
         <form @submit.prevent="quizz.next()">
-            <div class="flex gap-2 pb-6 flex-col sm:flex-row">
+            <div class="flex gap-2 pb-6 flex-col">
                 <AnswerCards />
             </div>
            

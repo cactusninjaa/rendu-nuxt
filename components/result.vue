@@ -11,11 +11,14 @@
      
         <ul class="flex flex-col gap-4">
             <li 
-            v-for="(question, index) in quizz.data.questions" 
+            v-for="(question, index) in quizz.answers.value" 
             :key="index"
-            class="border border-gray-300 p-4 rounded"
+            class="border border-gray-300 p-4 rounded flex flex-col gap-2"
+            :class="question.correct ? 'bg-green-100 border-green-500' : 'bg-red-100 border-red-500'"
             >
-                {{ question.title }} {{ question.correctAnswer }}
+                {{ question.question }} 
+                <span v-if="! question.correct" class="line-through">{{ question.answer }}</span>
+                <p class="font-bold">{{ question.correctAnswer }}</p>
             </li>
         </ul>
 
